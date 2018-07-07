@@ -12,6 +12,7 @@
         <% @songs.each do |song| %>
         <div class="grid-item">
         <ul>
+          <li> <%= image_tag("play_button.jpg", :alt => "play button image") %>
           <li> <%= song.title %></li>
           <li> <%= "Length: #{song.length}" %></li>
           <li> <%= "Play Count: #{song.play_count}" %></li>

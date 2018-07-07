@@ -13,8 +13,26 @@ h1{
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 200px 200px 200px 200px;
-  padding: 5px;
-  text-align: center;
+  grid-template-rows: 250px 250px 250px 250px;
   grid-gap: 25px;
+}
+
+.grid-item{
+  background-color: lightcyan;
+  opacity: .8;
+  align-content: center;
+  border-radius: 25%;
+}
+
+.grid-item img{
+  border-radius: 50%;
+  height: 110px;
+  width: 200px;
+  margin-top: 25px;
+}
+
+.grid-item ul{
+  list-style-type: none;
+  text-align: center;
+  margin-right: 2em;
 }
