@@ -13,8 +13,8 @@ h1{
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 250px 250px 250px 250px;
-  grid-gap: 25px;
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-gap: 40px;
 }
 
 .grid-item{
@@ -26,9 +26,9 @@ h1{
 
 .grid-item img{
   border-radius: 50%;
-  height: 110px;
-  width: 200px;
-  margin-top: 25px;
+  height: 100px;
+  width: 175px;
+  margin-top: 3px;
 }
 
 .grid-item ul{
