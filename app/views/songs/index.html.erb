@@ -1,6 +1,23 @@
-<h1>All Songs</h1>
-<% @songs.each do |song| %>
-<h2><%= song.title %></h2>
-<p>Plays: <%= song.play_count %></p>
-<p>Length: <%= song.length %></p>
-<% end %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Songs</title>
+    <link rel="stylesheet" type="text/css" href="/index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Permanent+Marker" rel="stylesheet">
+  </head>
+  <body>
+      <h1>My Songs</h1>
+    <div class="grid-container">
+        <% @songs.each do |song| %>
+        <div class="grid-item">
+        <ul>
+          <li> <%= song.title %></li>
+          <li> <%= "Length: #{song.length}" %></li>
+          <li> <%= "Play Count: #{song.play_count}" %></li>
+        </ul>
+      </div>
+        <% end %>
+    </div>
+  </body>
+</html>
