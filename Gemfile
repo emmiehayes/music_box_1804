@@ -40,6 +40,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'shoulda-matchers'
   gem 'active-designer'
+  gem 'tux'
 end
 
 group :development do
