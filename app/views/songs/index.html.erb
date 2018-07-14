@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>All Songs</title>
     <link rel="stylesheet" type="text/css" href="/index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Permanent+Marker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Permanent+Marker" rel="stylesheet">
@@ -13,7 +12,7 @@
         <div class="grid-item">
         <ul>
           <li> <%= image_tag("play_button.jpg", :alt => "play button image") %>
-          <li> <%= song.title %></li>
+          <li> <%= "Title: #{song.title}" %></li>
           <li> <%= "Length: #{song.length}" %></li>
           <li> <%= "Play Count: #{song.play_count}" %></li>
         </ul>
