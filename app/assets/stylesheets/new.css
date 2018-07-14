@@ -1,0 +1,22 @@
+body {
+      background: url(/assets/cassette_960.jpg);
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+  }
+
+.create_form{
+    font-family: 'Raleway', sans-serif;
+    font_style: 'bold';
+    text-align: center;
+
+}
+
+.field{
+      border-radius: 8px;
+         font-size: 22px;
+}

@@ -1,15 +1,35 @@
-<%= form_for [@artist, @song] do |f| %>
-  <%= f.label :title%>
-  <%= f.text_field :title%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/new.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body background="cassette_960.jpg">
+    <h1>Create a New Song</h1>
+    <div class="create_form">
+      <%= form_for [@artist, @song] do |f| %>
+      <p class='title'>
+        <%= f.label :title%></br>
+        <%= f.text_field :title, :class =>'field'%>
+      </p>
 
-  <%= f.label :length%>
-  <%= f.text_field :length%>
+      <p class='length'>
+        <%= f.label :length%></br>
+        <%= f.text_field :length, :class =>'field'%>
+      </p>
 
-  <%= f.label :play_count%>
-  <%= f.text_field :play_count%>
+      <p class='play_count'>
+        <%= f.label :play_count%></br>
+        <%= f.text_field :play_count, :class =>'field'%>
+      </p>
 
-  <%= f.label :artist_name%>
-  <%= f.collection_select(:artist_id, Artist.all, :id, :name) %>
-
-  <%= f.submit %>
-  <% end %>
+      <p class='artist_id'>
+        <%= f.label :artist_name%></br>
+        <%= f.collection_select(:artist_id, Artist.all, :id, :name) %>
+      </p>
+        <%= f.submit %>
+        <% end %>
+    </div>
+  </body>
+</html>
